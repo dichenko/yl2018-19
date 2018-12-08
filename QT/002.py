@@ -30,12 +30,14 @@ class Example(QWidget):
 
 
 
+
     def hello(self):
         a = self.name_input.text()
         pixmap = QPixmap(a)
-        lbl = QLabel(self)
-        lbl.setPixmap(pixmap)
-
+        self.pix_label = QLabel(self)
+        self.pix_label.setText("test")
+        self.pix_label.move(40, 150)
+        self.pix_label.setPixmap(pixmap)
 
 
 if __name__ == '__main__':
