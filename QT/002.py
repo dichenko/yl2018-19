@@ -27,16 +27,13 @@ class Example(QWidget):
         self.name_input = QLineEdit(self)
         self.name_input.move(130, 50)
 
-
-
-
+        self.pix_label = QLabel(self)
+        self.pix_label.setText("testtesttesttesttesttesttesttest \n srfgwrfgwerf")
+        self.pix_label.setGeometry(40, 150, 200, 200)
 
     def hello(self):
         a = self.name_input.text()
         pixmap = QPixmap(a)
-        self.pix_label = QLabel(self)
-        self.pix_label.setText("test")
-        self.pix_label.move(40, 150)
         self.pix_label.setPixmap(pixmap)
 
 
